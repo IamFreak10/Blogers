@@ -94,6 +94,8 @@ const Navbar = ({
                 src={logo.src}
                 className="max-h-8 dark:invert"
                 alt={logo.alt}
+                width={100}
+                height={100}
               />
               <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}
@@ -136,6 +138,8 @@ const Navbar = ({
                 src={logo.src}
                 className="max-h-8 dark:invert"
                 alt={logo.alt}
+                width={100}
+                height={100}
               />
             </a>
             <Sheet>
@@ -150,6 +154,8 @@ const Navbar = ({
                         src={logo.src}
                         className="max-h-8 dark:invert"
                         alt={logo.alt}
+                        width={100}
+                        height={100}
                       />
                     </a>
                   </SheetTitle>
