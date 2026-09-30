@@ -3,14 +3,19 @@ import { AppSidebar } from '@/components/app-sidebar';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 
 export default function DashboardLayout({
-  children,
+  admin,
+  user,
 }: {
-  children: React.ReactNode;
+  admin: React.ReactNode;
+  user: React.ReactNode;
 }) {
+  const UserInfo = {
+    role: 'admin',
+  };
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarInset>{children}</SidebarInset>
+      <SidebarInset>{UserInfo?.role === 'admin' ? admin : user}</SidebarInset>
     </SidebarProvider>
   );
 }
